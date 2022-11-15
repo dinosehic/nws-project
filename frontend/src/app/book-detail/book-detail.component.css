@@ -1,0 +1,12 @@
+.right {
+    text-align: right;
+    vertical-align: top;
+    color: black;
+}
+table{
+    width: 70%;
+    margin-left: 15%!important;
+    font-size:150%;
+    table-layout:auto;
+    color: white;
+}

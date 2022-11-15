@@ -1,0 +1,3 @@
+Start service: MYSQL80
+Start connection in MYSQL workbench: Napredni Web Servisi - baza
+Root: Root - acc used for connecting to database through mysql workbench

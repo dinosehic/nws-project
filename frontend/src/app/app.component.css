@@ -1,0 +1,40 @@
+/* AppComponent's private CSS styles */
+nav a {
+  padding: 0.5rem;
+  text-decoration: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: rgb(206, 206, 206);
+  color: black;
+  border-right: 1px solid black;
+  font-size:125%;
+}
+h1{
+  text-align: center;
+  padding: 20px;
+  color: white
+}
+nav a:hover {
+  color: white;
+  background-color: #57425c;
+}
+nav a:active {
+  background-color: black;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.226);
+}
+
+.login{
+  border-left: 1px solid black;
+  float: right;
+}
+
+.register{
+  border-left: 1px solid black;
+  border-right: 0px!important;
+  float: right;
+}

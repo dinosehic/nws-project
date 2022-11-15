@@ -1,0 +1,20 @@
+<div class="search">
+  <input [(ngModel)]="myModuleIme" (input)="valueChangeSearch($event)" type="text" placeholder="Search... ">
+  <span style="display:none">{{myModuleIme}}</span>
+  <span style="color: white" > <em> Search by Title, Author/s, or Summary</em></span>
+</div>
+
+<table>
+  <th>Title</th>
+  <th>Author/s</th>
+  <th>Release Date</th>
+  <th>Summary</th>
+  <th>Remove</th>
+  <tr *ngFor="let favourite of favourites" >
+    <td routerLink="/detail/{{favourite.id}}">{{favourite.title | uppercase}}</td>
+    <td>{{favourite.author}}</td>
+    <td>{{favourite.release_date | date: 'dd/MM/y'}}</td>
+    <td>{{favourite.summary}}</td>
+    <td><button type="button" (click)="removeFavourite(username, favourite.id)">X</button></td>
+  </tr>
+</table>

@@ -1,0 +1,24 @@
+<div class="search">
+  <input [(ngModel)]="myModuleIme" (input)="valueChangeSearch($event)" type="text" placeholder="Search... ">
+  <span style="display:none">{{myModuleIme}}</span>
+  <span style="color: white" > <em> Search by Title, Author/s, or Summary</em></span>
+</div>
+
+<table>
+  <th>Title</th>
+  <th>Author/s</th>
+  <th>Release Date</th>
+  <th>Summary</th>
+  <th *ngIf="isAdmin">Edit</th>
+  <th *ngIf="isAdmin">Delete</th>
+  <th *ngIf="isLoggedIn && !isAdmin">Like</th>
+  <tr *ngFor="let book of books">
+    <td routerLink="/detail/{{book.id}}">{{book.title | uppercase}}</td>
+    <td>{{book.author}}</td>
+    <td>{{book.release_date | date: 'dd/MM/y'}}</td>
+    <td>{{book.summary}}</td>
+    <td *ngIf="isAdmin"><button type="button" routerLink="/edit/{{book.id}}">&#9998;</button></td>
+    <td *ngIf="isAdmin"><button  type="button" (click)="removeBook(book.id)">X</button></td>
+    <td *ngIf="isLoggedIn && !isAdmin"><button type="button" (click)="addFavourite(username, book.id)">&#10084;</button></td>
+  </tr>
+</table>
