@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BookDetailComponent } from './book-detail/book-detail.component';
 import { BooksComponent } from './books/books.component';
-import { EditBookComponent } from './edit-book/edit-book.component';
 import { FavouriteBooksComponent } from './favourite-books/favourite-books.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -15,8 +14,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent},
   { path: 'login', component: LoginComponent},
   { path: 'profile', component: ProfileComponent},
-  { path: 'favourites', component: FavouriteBooksComponent},
-  { path: 'edit/:id', component: EditBookComponent}
+  { path: 'favourites', component: FavouriteBooksComponent}
 ];
 
 @NgModule({

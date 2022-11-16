@@ -13,7 +13,6 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FavouriteBooksComponent } from './favourite-books/favourite-books.component';
-import { EditBookComponent } from './edit-book/edit-book.component';
 
 
 @NgModule({
@@ -25,7 +24,6 @@ import { EditBookComponent } from './edit-book/edit-book.component';
     LoginComponent,
     ProfileComponent,
     FavouriteBooksComponent,
-    EditBookComponent
   ],
   imports: [
     BrowserModule,

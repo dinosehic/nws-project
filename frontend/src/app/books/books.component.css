@@ -8,7 +8,6 @@ table {
 
 td, th {
   border: 1px solid black;
-  text-align: center;
   padding: 8px;
   color: black;
   background-color: rgb(206, 206, 206);
@@ -21,6 +20,12 @@ td, th {
 }
 .searchDesc {
   text-decoration: italic;
+}
+.centar{
+  text-align: center;
+}
+tr:nth-child(odd) td{
+  background-color: rgb(169, 168, 168);
 }
 tr:hover td{
   background-color: #57425c;

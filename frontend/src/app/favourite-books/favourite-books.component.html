@@ -9,12 +9,12 @@
   <th>Author/s</th>
   <th>Release Date</th>
   <th>Summary</th>
-  <th>Remove</th>
+  <th class="centar">Remove</th>
   <tr *ngFor="let favourite of favourites" >
     <td routerLink="/detail/{{favourite.id}}">{{favourite.title | uppercase}}</td>
     <td>{{favourite.author}}</td>
     <td>{{favourite.release_date | date: 'dd/MM/y'}}</td>
     <td>{{favourite.summary}}</td>
-    <td><button type="button" (click)="removeFavourite(username, favourite.id)">X</button></td>
+    <td class="centar"><button type="button" (click)="removeFavourite(username, favourite.id)">X</button></td>
   </tr>
 </table>

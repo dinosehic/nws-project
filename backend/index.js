@@ -188,7 +188,7 @@ app.post("/register", async (req,res) => {
         if (err) throw (err)
         console.log ("--------> Created new User");
         console.log(result.insertId);
-        res.sendStatus(200);
+        res.send({ok: "ok"});
       })
     }
   }) //end of con.query()
