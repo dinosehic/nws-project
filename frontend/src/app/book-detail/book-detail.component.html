@@ -26,9 +26,9 @@
             <td *ngIf="isAdmin"><input for="book-description" [(ngModel)]="book.description" placeholder="Edit description..." style="height: 250px;"></td>
         </tr>
         <tr>
-            <td><button type="button" (click)="goBack()">Go Back</button></td>
+            <td><button type="button" (click)="goBack()" class="button">Go Back</button></td>
             <td></td>
-            <td *ngIf="isAdmin"><button type="button" (click)="save()">Save</button></td>
+            <td *ngIf="isAdmin"><button type="button" (click)="save()" class="button">Save</button></td>
         </tr>
     </table>
 </div>

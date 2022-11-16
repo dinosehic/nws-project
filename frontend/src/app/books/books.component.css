@@ -31,3 +31,13 @@ tr:hover td{
   background-color: #57425c;
   color: white;
 }
+
+.button:hover{
+  background-color: black;
+  color: white;
+}
+
+.button:active{
+  background-color: black;
+  color: red;
+}

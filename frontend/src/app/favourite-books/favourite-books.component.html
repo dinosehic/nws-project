@@ -15,6 +15,10 @@
     <td>{{favourite.author}}</td>
     <td>{{favourite.release_date | date: 'dd/MM/y'}}</td>
     <td>{{favourite.summary}}</td>
-    <td class="centar"><button type="button" (click)="removeFavourite(username, favourite.id)">X</button></td>
+    <td class="centar"><button type="button" (click)="removeFavourite(username, favourite.id)" class="button">X</button></td>
   </tr>
 </table>
+
+<div class="search">
+  <span style="color: white" > <em> Click on the title of a book for more information.</em></span>
+</div>
