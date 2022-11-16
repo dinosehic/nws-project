@@ -1,0 +1,43 @@
+table {
+    margin-top: 10px!important;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 10%!important;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 8px;
+  color: black;
+  background-color: rgb(206, 206, 206);
+}
+.search {
+  /*width: 17%;
+  margin: auto!important;
+  */
+  margin-left: 10%!important;
+}
+.searchDesc {
+  text-decoration: italic;
+}
+.centar{
+  text-align: center;
+}
+tr:nth-child(odd) td{
+  background-color: rgb(169, 168, 168);
+}
+tr:hover td{
+  background-color: #57425c;
+  color: white;
+}
+
+.button:hover{
+  background-color: black;
+  color: white;
+}
+
+.button:active{
+  background-color: black;
+  color: red;
+}

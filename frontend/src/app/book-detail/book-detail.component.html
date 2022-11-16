@@ -1,0 +1,37 @@
+<div *ngIf="book">
+    <table>
+        <tr>
+            <td class="right"><b>Title:</b></td>
+            <td>{{book.title}}</td>
+            <td *ngIf="isAdmin"><input for="book-title" [(ngModel)]="book.title" placeholder="Edit title..."></td>
+        </tr>
+        <tr>
+            <td class="right"><b>Author:</b></td>
+            <td>{{book.author}}</td>
+            <td *ngIf="isAdmin"><input for="book-author" [(ngModel)]="book.author" placeholder="Edit author..."></td>
+        </tr>
+        <tr>
+            <td class="right"><b>Summary:</b></td>
+            <td>{{book.summary}}</td>
+            <td *ngIf="isAdmin"><input for="book-summary" [(ngModel)]="book.summary" placeholder="Edit summary..."></td>
+        </tr>
+        <tr>
+            <td class="right"><b>Released: </b></td>
+            <td>{{book.release_date | date: 'dd/MM/y'}}</td>
+            <td *ngIf="isAdmin"><input for="book-date" [(ngModel)]="book.release_date" placeholder="Edit date..."></td>
+        </tr>
+        <tr>
+            <td class="right"><b>Description:</b></td>
+            <td>{{book.description}}</td>
+            <td *ngIf="isAdmin"><input for="book-description" [(ngModel)]="book.description" placeholder="Edit description..." style="height: 250px;"></td>
+        </tr>
+        <tr>
+            <td><button type="button" (click)="goBack()" class="button">Go Back</button></td>
+            <td></td>
+            <td *ngIf="isAdmin"><button type="button" (click)="save()" class="button">Save</button></td>
+        </tr>
+    </table>
+</div>
+
+
+
