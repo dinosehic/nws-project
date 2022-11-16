@@ -1,10 +1,11 @@
 <nav>
   <a routerLink="/books">Books</a>
   <a routerLink="/favourites" *ngIf="isLoggedIn && !isAdmin">MyBooks</a>
-  <a routerLink="/">About</a>
+  <a>About</a>
   <a routerLink="/login" class="login" *ngIf="!isLoggedIn">Login</a>
   <a routerLink="/register" class="register" *ngIf="!isLoggedIn">Register</a>
   <a (click)="logout()" class="login" *ngIf="isLoggedIn" routerLink="/books">Log Out</a>
+  <a *ngIf="isLoggedIn" class="register">{{username}}</a>
 </nav>
 <h1>{{title}}</h1>
 <router-outlet></router-outlet>
